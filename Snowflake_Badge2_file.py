@@ -1,5 +1,4 @@
 import streamlit
-import snowflake.connector
 
 streamlit.title('My Parents New Healthy Diner')
 streamlit.header('Breakfast Favorite')
@@ -35,5 +34,5 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write the responded selection data
 streamlit.dataframe(fruityvice_normalized) 
 
-
+import snowflake.connector
 #streamlit.text(fruityvice_response.json())  #Write data to the screen
